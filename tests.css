@@ -10,6 +10,11 @@
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #ececec;
+    --main-font:18px;
+    --second-font:30px;
+    --divs-font:20px;
+    --contact-font:275px;
+    --main-title-font:42px;
 }
 html {
     scroll-behavior: smooth;
@@ -98,7 +103,7 @@ ul{
 }
 
 .header .container .links span{
-    font-size: 1em;
+    font-size: var(--second-font);
     font-weight: bold;
     font-family: math;
     transition: var(--main-transition);
@@ -130,7 +135,7 @@ ul{
 }
 
 .header .container .links ul li a{
-    font-size: 18px;
+    font-size: var(--main-font);
     padding: 6px 10px;
     font-family: ui-monospace;
 }
@@ -176,9 +181,8 @@ background-color: #777;
 
 
 .landing h3{
-    font-size: 2em;
+    font-size: var(--main-title-font);
     margin: 0;
-    font-weight: bold;
     font-family: math;
     position: relative;
     color: #222;
@@ -247,7 +251,7 @@ background-color: #777;
 } 
 
 .landing .container .divs-holder div{
-    font-size: 20px;
+    font-size: var(--divs-font);
     padding: 10px 10px;
     margin: 8px 13px;
     width: 150px;
@@ -340,7 +344,7 @@ background-color: #777;
     }
 
 .goals .main-title{
-    font-size: 42px;
+    font-size: var(--main-title-font);
     margin: 0;
     font-family: math;
     position: relative;
@@ -447,7 +451,7 @@ background-color: #777;
 
 .goals  .box-holder .box p{
     font-family: meth;
-    font-size: 20px;
+    font-size: var(--divs-font);
     position: relative;
     z-index: 100;
     padding: 5px 5px;
@@ -638,14 +642,14 @@ justify-content: space-around;
 }
 
 .contact .box-holder .box h3{
-    font-size: 30px;
+    font-size: var(--second-font);
     margin: 0;
     padding: 0;
     font-family: meth;
 }
 
 .contact .box-holder .box h4{
-    font-size: 30px;
+    font-size: var(--second-font);
     margin: 0;
     padding: 0;
     font-family: meth;
@@ -655,7 +659,7 @@ justify-content: space-around;
     font-size: 275px;
     width: 200px;
     z-index: -1;
-    font-family: neth;
+    font-family: meth;
     padding: -30px;
     margin: -30px;
     transform: translateX(10%);
@@ -686,7 +690,7 @@ justify-content: space-around;
     padding: 18px 0px;
     margin: 20px 0;
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--main-font);
     color: #282828;
     font-family: meth;
     transition: var(--main-transition);
@@ -756,7 +760,7 @@ justify-content: space-around;
     }
 
 .copyright h6{
-    font-size: 18px;
+    font-size: var(--main-font);
     font-weight: bold;
     font-family: meth;
     text-align: center;
