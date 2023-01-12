@@ -12,16 +12,17 @@
     --section-background: #ececec;
     --main-font:18px;
     --second-font:30px;
-    --divs-font:100px;
+    --divs-font:25px;
     --contact-font:275px;
     --main-title-font:42px;
+    --main-font:serif;
 }
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "Cairo", sans-serif;
-    
+    font-family: var(--main-font);
+
 }
 
 a{
@@ -53,7 +54,17 @@ ul{
 
 @media (min-width:320px){
     .header{
-    width: 393%;}
+    width: 393%;
+    }
+
+    .header .container .links ul li a {
+        font-size: 40px;
+    }
+
+    .header .container .links span {
+        font-size: 60px;
+    }
+
 }
 
 /* Small */
@@ -105,7 +116,7 @@ ul{
 .header .container .links span{
     font-size: var(--second-font);
     font-weight: bold;
-    font-family: math;
+    font-family: var(--main-font);
     transition: var(--main-transition);
     padding: 10px 5px;
 }
@@ -137,7 +148,7 @@ ul{
 .header .container .links ul li a{
     font-size: var(--main-font);
     padding: 6px 10px;
-    font-family: ui-monospace;
+    font-family: var(--main-font);
 }
 /* END HEADER*/
 /* START LANDING*/
@@ -149,7 +160,20 @@ background-color: #777;
 
 @media (min-width:320px){
     .landing{
-    width: 393%;}
+    width: 393%;
+    }
+
+    .landing h3 {
+        font-size: 75px;
+    }
+
+    .landing .container .divs-holder div {
+        font-size: 31px;
+        padding: 10px 10px;
+        margin: 8px 13px;
+        width: 275px;
+        height: 155px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -183,7 +207,7 @@ background-color: #777;
 .landing h3{
     font-size: var(--main-title-font);
     margin: 0;
-    font-family: math;
+    font-family: var(--main-font);
     position: relative;
     color: #222;
     text-transform: capitalize;
@@ -255,7 +279,7 @@ background-color: #777;
     padding: 10px 10px;
     margin: 8px 13px;
     width: 150px;
-    font-family: ui-rounded;
+    font-family: var(--main-font);
     background-color: rgb(100, 100, 100);
     border-radius: 27px 8px 30px;
     font-weight: 600;
@@ -306,14 +330,21 @@ background-color: #777;
 /* END LANDING*/
 /* START GOLAS*/
 .goals{
-    padding: var(--main-padding-bottom);
-    padding: var(--main-padding-top);
+    padding-top: var(--main-padding-bottom);
+    padding-bottom: var(--main-padding-top);
     background-color: #777;
 }
 
 @media (min-width:320px){
     .goals{
-    width: 393%;}
+    width: 393%;
+}
+
+    .goals .main-title {
+        font-size: 58px;
+    }
+
+
 }
 
 @media (min-width: 768px) {
@@ -346,7 +377,7 @@ background-color: #777;
 .goals .main-title{
     font-size: var(--main-title-font);
     margin: 0;
-    font-family: math;
+    font-family: var(--main-font);
     position: relative;
     color: #222;
     text-transform: capitalize;
@@ -450,7 +481,7 @@ background-color: #777;
 }
 
 .goals  .box-holder .box p{
-    font-family: meth;
+    font-family: var(--main-font);
     font-size: var(--divs-font);
     position: relative;
     z-index: 100;
@@ -638,28 +669,28 @@ justify-content: space-around;
     list-style: none;
     margin: 12px -8px;
     font-size: 18px;
-    font-family: meth;
+    font-family: var(--main-font);
 }
 
 .contact .box-holder .box h3{
     font-size: var(--second-font);
     margin: 0;
     padding: 0;
-    font-family: meth;
+    font-family: var(--main-font);
 }
 
 .contact .box-holder .box h4{
     font-size: var(--second-font);
     margin: 0;
     padding: 0;
-    font-family: meth;
+    font-family: var(--main-font);
     text-align: center;
 }
 .contact h5{
     font-size: 275px;
     width: 200px;
     z-index: -1;
-    font-family: meth;
+    font-family: var(--main-font);
     padding: -30px;
     margin: -30px;
     transform: translateX(10%);
@@ -671,7 +702,7 @@ justify-content: space-around;
 }
 
 .contact .box-holder .box p{
-    font-family: meth;
+    font-family: var(--main-font);
     font-size: 20px;
 }
 
@@ -692,14 +723,14 @@ justify-content: space-around;
     font-weight: bold;
     font-size: var(--main-font);
     color: #282828;
-    font-family: meth;
+    font-family: var(--main-font);
     transition: var(--main-transition);
     border-radius: 10px;
 }
 
 .contact .box-holder .box input::placeholder{
     padding-left: 10px;
-    font-family: meth;
+    font-family: var(--main-font);
 }
 
 .contact .box-holder .box #submit{
@@ -710,7 +741,7 @@ justify-content: space-around;
     font-weight: bold;
     font-size: 18px;
     color: #282828;
-    font-family: meth;
+    font-family: var(--main-font);
     transition: var(--main-transition);
 }
 
@@ -762,7 +793,7 @@ justify-content: space-around;
 .copyright h6{
     font-size: var(--main-font);
     font-weight: bold;
-    font-family: meth;
+    font-family: var(--main-font);
     text-align: center;
     text-transform:capitalize;
     color: #eee;
