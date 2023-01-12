@@ -12,7 +12,7 @@
     --section-background: #ececec;
     --main-font:18px;
     --second-font:30px;
-    --divs-font:25px;
+    --divs-font:20px;
     --contact-font:275px;
     --main-title-font:42px;
     --main-font:serif;
@@ -275,10 +275,11 @@ background-color: #777;
 } 
 
 .landing .container .divs-holder div{
-    font-size: var(--divs-font);
+    font-size: 20px;
     padding: 10px 10px;
     margin: 8px 13px;
     width: 150px;
+    height: 130px;
     font-family: var(--main-font);
     background-color: rgb(100, 100, 100);
     border-radius: 27px 8px 30px;
@@ -687,7 +688,7 @@ justify-content: space-around;
     text-align: center;
 }
 .contact h5{
-    font-size: 410px;
+    font-size: 330px;
     width: 200px;
     z-index: -1;
     font-family: var(--main-font);
