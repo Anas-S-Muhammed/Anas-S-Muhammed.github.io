@@ -636,6 +636,15 @@ justify-content: space-around;
     padding: 10px 0;
 }
 
+.contact .box-holder #info h6{
+    font-family: serif;
+    font-size: 20px;
+    margin: 0 0;
+    padding: 17px 0;
+    text-align: center;
+    color: #eee;
+}
+
 .contact .box-holder #info i{
     padding: 3px 5px;
     font-size: 18px;
@@ -719,8 +728,8 @@ justify-content: space-around;
 .contact .box-holder .box a{
     background-color: white;
     border: none;
-    padding: 18px 0px;
-    margin: 20px 0;
+    padding: 16px 0px;
+    margin: -5px 0;
     font-weight: bold;
     font-size: var(--main-font);
     color: #282828;
