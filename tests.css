@@ -554,6 +554,117 @@ background-color: #777;
 } 
 
 /* END GOLAS*/
+/* START knowldeg*/
+.knowldeg{
+    padding-top: var(--main-padding-bottom);
+    padding-bottom: var(--main-padding-top);
+    background-color: rgb(104, 104, 104);
+}
+
+.knowldeg .main-title{
+    font-size: var(--main-title-font);
+    margin: 0;
+    font-family: var(--main-font);
+    position: relative;
+    color: #222;
+    text-transform: capitalize;
+    left: 90px;
+    z-index: 2;
+    width: 496px;
+}
+
+
+
+.knowldeg .main-title::before{
+    content: "";
+    width: 200px;
+    right: 40px;
+    height: 32px;
+    left: 20px;
+    position: absolute;
+    background-color: #444;
+    z-index: -1;
+    transform: rotate(-10deg);
+    border-radius: 40px 8px 43px;
+    transition: var(--main-transition);
+}
+
+.knowldeg .main-title::after{
+    content: "";
+    width: 200px;
+    right: 40px;
+    height: 32px;
+    left: 20px;
+    position: absolute;
+    background-color: #444;
+    z-index: -1;
+    transform: rotate(8deg);
+    border-radius: 40px 8px 43px;
+    transition: var(--main-transition);
+}
+
+.knowldeg .main-title:hover::before{
+    width: 50%;
+    height: 60%;
+    top: 10px;
+    left: 0;
+    background-color: #eee;
+    transform: rotate(0deg);
+}
+
+.knowldeg .main-title:hover::after{
+    top: 10px;
+    left: 0;
+    height: 60%;
+    width: 50%;
+    background-color: #eee;
+    transform: rotate(0deg);
+}
+
+.knowldeg .box-holder{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.knowldeg .box-holder h3{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: none;
+}
+
+.knowldeg .box-holder .box{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.knowldeg .box-holder .box i{
+    font-size: 70px;
+    }
+
+    .knowldeg .box-holder .box i:hover{
+        color:#444;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+/* END COURSES*/
 /*START CONTACT*/
 .contact{
     padding-top: var(--main-padding-bottom);
